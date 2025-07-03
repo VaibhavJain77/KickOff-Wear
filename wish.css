@@ -1,0 +1,202 @@
+/* Base reset + font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins' ;
+  background-color: #f6f6f6;
+  color: #333;
+}
+
+/* Navbar */
+.ull:hover{
+  color: red;
+}
+nav {
+  width: 100%;
+  background: #000;
+  padding: 15px 0;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 16px;
+  transition: 0.3s ease;
+}
+nav a:hover {
+  color: #f16565;
+}
+.containerr {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Header/Top Section */
+
+.cart-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo{
+  width: 200px;
+  height: 60px;
+ margin-right: 300px;
+}
+.socials {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  height: 40px;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+   background: #ea4c89;
+  color: white;
+}
+/* Icons section */
+.save-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+svg {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+svg:hover {
+  transform: scale(1.1);
+}
+.badge-ico {
+  position: absolute;
+  top: -6px;
+  left: 10px;
+  background-color: #f16565;
+  color: white;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+  font-weight: 600;
+}
+
+/* Wishlist Page */
+.whole2 {
+  display: flex;
+  justify-content: center;
+}
+.wish-page {
+  max-width: 900px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.wish-items-section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.wish-country,
+.wish-boots,
+.wish-football {
+  margin-top: 30px;
+}
+
+/* Wishlist item */
+.wish-item {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  background-color: #fdfdfd;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  align-items: center;
+}
+.wish-item-image {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.wish-item-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.item-name {
+  font-size: 20px;
+  font-weight: 600;
+}
+.item-price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #27ae60;
+}
+.item-ori {
+  font-size: 16px;
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .wish-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wish-item-image {
+    width: 100%;
+    height: auto;
+  }
+  nav a {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}

@@ -1,0 +1,387 @@
+/* === Base Reset & Setup === */
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* === Navbar === */
+nav{
+    width: 100%;
+    float: left;
+    background: rgb(0, 0, 0);
+    padding: 15px 0px;
+}
+.ull:hover{
+  color: red;
+
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 2px 20px;
+    align-items: center;
+}
+.containerr{
+      font-family: 'Poppins';
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+#navbar-links {
+  margin-top: 100px; 
+  margin-bottom: 30px;
+}
+
+/* === Social Icons === */
+.socials {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  margin: 5px 2px;
+  height: 20px;
+}
+
+.fa-facebook { background: #3B5998; color: white; }
+.fa-twitter  { background: #55ACEE; color: white; }
+.fa-linkedin { background: #007bb5; color: white; }
+.fa-youtube  { background: #bb0000; color: white; }
+.fa-instagram{ background: #ea4c89; color: white; }
+
+/* === Header Logo & Cart Section === */
+.logo {
+  width: 200px;
+  height: 60px;
+  padding-right: 40px; /* Reduced from 180px */
+  padding-top: 4px;
+}
+
+.cart-section {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+svg {
+  margin-right: 40px;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+.save-section {
+  padding-bottom: 20px;
+}
+
+.badge-icon,
+.wishlist0 {
+  background-color: #f16565;
+  text-align: center;
+  padding: 0 6px;
+  height: 18px;
+  position: relative;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #fff;
+  left: -55px;
+  top: -22px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* === Slider === */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 565px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 300%;
+}
+
+.slide {
+  width: 100VW;
+  height: 565px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* === Headings and Section Titles === */
+h1, .int, .balll {
+  margin: 40px auto 0;
+  text-align: center;
+  font-size: 48px;
+  max-width: 90%;
+}
+
+/* === Underlines === */
+.club-underline,
+.retro-underline,
+.boots-underline,
+.football-underline,
+.country-underline {
+  background-color: red;
+  display: inline-block;
+  height: 10px;
+  margin-bottom: 0;
+  position: relative;
+  margin: 10px auto;
+  display: block;
+}
+
+.club-underline      { width: 405px; }
+.retro-underline     { width: 415px; }
+.boots-underline     { width: 425px; }
+.football-underline  { width: 485px; }
+.country-underline   { width: 609px; }
+
+/* === Product Grids (Responsive) === */
+.club,
+.retro,
+.country,
+.boots,
+.ball {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  padding: 40px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* === Product Card === */
+.items-containers {
+  
+  width: 100%;       
+  max-width: 400px;   
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.item-container {
+  margin-top: 60px;
+}
+
+.item-image {
+  width: 300px;
+  display: block;
+  padding-left: 50px;
+  margin-bottom: 20px;
+  height: 395px;
+}
+
+/* === Hover Buttons === */
+.plus-button,
+.wishlist {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid red;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: right 0.3s ease;
+}
+
+.plus-button {
+  bottom: 10px;
+  right: -60px;
+}
+
+.wishlist {
+  bottom: 50px;
+  right: -60px;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-container:hover .wishlist,
+.img-container:hover .plus-button {
+  right: 1px;
+}
+
+/* === Add to Cart Hover Wrap === */
+.plus-wrap {
+  position: relative;
+}
+
+.add-button {
+  position: absolute;
+  right: -160px;
+  bottom: 10px;
+  width: 160px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 16px;
+  font-family: 'Poppins';
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  cursor: pointer;
+  transition: right 0.3s ease;
+  z-index: 8;
+}
+
+.plus-wrap:hover .add-button {
+  right: 8px;
+}
+
+/* === Product Text === */
+.name {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.name:hover {
+  color: rgb(196, 131, 9);
+  cursor: pointer;
+}
+
+.rating {
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.original {
+  margin-left: 10px;
+  font-weight: 700;
+  text-decoration: line-through;
+  color: gray;
+}
+
+.current {
+  font-weight: 700;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 22px;
+}
+
+/* === Footer === */
+.site-footer {
+  background-color: #111;
+  color: #ddd;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-column ul li a:hover {
+  color: red;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #777;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+}

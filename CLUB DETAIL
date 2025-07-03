@@ -1,0 +1,92 @@
+⯪
+★ ★ ★ ★ ★
+₹
+
+// Check retroData
+    for (let i = 0; i < retroData.length; i++) {
+      if (id == retroData[i].id) {
+        matchedItems.push(retroData[i]);
+        return;
+      }
+    }
+
+    // Check countryData
+    for (let i = 0; i < countryData.length; i++) {
+      if (id == countryData[i].id) {
+        matchedItems.push(countryData[i]);
+        return;
+      }
+    }
+
+    // Check bootsData
+    for (let i = 0; i < bootsData.length; i++) {
+      if (id == bootsData[i].id) {
+        matchedItems.push(bootsData[i]);
+        return;
+      }
+    }
+
+    // Check footballData
+    for (let i = 0; i < footballData.length; i++) {
+      if (id == footballData[i].id) {
+        matchedItems.push(footballData[i]);
+        return;
+      }
+    }
+
+
+
+       CLUB DETAIL
+
+1 --> REAL MADRID 2017-18 AWAY FULL SLEVEES VINTAGE ORIGINALS || Rs.1599 949
+2 --> Nike Men's FC Barcelona Stadium Home Jersey || 1499 699 
+3 --> Adidas Juventus Home Shirt 2019-20 (XXXL) White-Black
+4 --> Bayern Munich Home Kit 2020-21 | FCB to wear new Adidas jersey vs Eintracht in Pokal SF
+5 --> Barcelona Home Authentic Soccer Jersey 2024/25
+6 --> RONALDO 7 REAL MADRID THIRD SHIRT 17/18 || Rs.1499.00 799.00
+7 --> Manchester City Third Jersey Player Version 2023/24
+8 --> [Premium Quality] PSG Third Jordan Kit 2023-24 || ₹1,579.00 699.00
+
+      COUNTRY DETAIL
+
+1 --> [Premium Quality] Portugal Euro 2024 Home Customisable Jersey
+2 --> [Premium Quality] Argentina Copa America 2024 Home Customisable Jersey
+3 --> [Player Version] Germany World Cup Away 22-23 Kit
+4 --> [Premium Quality] France Euro 2024 Home Customisable Jersey
+5 --> [Premium Quality] Spain Euro 2024 Home Jersey
+6 --> [Premium Quality] Brazil Copa America 2024 Home Jersey
+7 --> [Player Version] Portugal World Cup Ronaldo Away 22-23 Kit
+8 --> [Premium Quality] Italy Euro 2024 Away Jersey
+
+       RETRO DETAIL
+       
+1 --> Manchester United Home 2008 Retro Jersey with Shorts
+2 --> Real Madrid Home 11 12 Retro Full Sleeves Jersey with Shorts
+3 --> AC Milan Home 2006 Retro Jersey with Shorts
+4 --> FC Barcelona Home 2008 Retro Jersey with Shorts
+5 --> [Premium Quality] FC Barcelona Home 2011-12 Retro Jersey
+6 --> [Premium Quality] Real Madrid Away 11 12 Ronaldo Retro Jersey Full Sleeves 1899
+7 --> [Premium Quality] AC Milan Away 2006-07 Maldini Retro Jersey 1799
+8 --> [Premium Quality] Liverpool Home 2010/11 Retro Jersey 1499
+
+      FOOTBALL DETAIL
+
+1 -->adidas Euro 2024 Boxed Footbal 1899
+2 -->Puma Cup Football 1799
+3 -->PUMA Premier League 2025/26 Football 1899
+4 -->Nike Pitch Football 1459
+5 -->Puma Attacanto Graphic Football 809
+6 -->Nivia Dominator 3.0 Footbal 1299
+7 -->Adidas AL RIHLA League Football 3099
+8 -->Vector X Bigwin Thermo Bounded Professional Football - Size: 5 1289
+
+      STUDS DETAIL
+
+1 -->Adidas Unisex Predator League Firm/Multi-Ground Football Boots 6199 8000
+2 -->Mens adidas F50 Club FG 4199 5000
+3 -->Nike Mercurial Superfly 9 Academy FG 8604
+4 -->Nivia Safari Football Studs 1299
+5 -->Predator Accuracy.4 Flexible Ground Boots 1600
+6 -->Nike Superfly Academy DF FG 8995
+7 -->NIVIA Men's INFRA 2.0 Football Shoes 1199 1499
+8 -->Nivia Men's Spear Football Shoes 1124 1499
